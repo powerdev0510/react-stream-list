@@ -1,18 +1,18 @@
-import React, { Component} from 'react';
+import React, { Component, Fragment} from 'react';
 
 import { connect } from 'react-redux';
-import ContentHeader from '../layouts/contentHeader';
 
 class Movies extends Component {
-  
   constructor(props){
     super(props);
   }
   render() {
     return (
-      <div>
-          <ContentHeader title="Popular Series"/>
-      </div>
+      <Fragment>
+        <div className="contentHeader">
+            <h2>Popular Movies</h2>
+        </div>
+      </Fragment>
     );
   }
 }

@@ -1,19 +1,26 @@
-import React, { Component} from 'react';
-import Header from './layouts/header';
-import Footer from './layouts/footer';
+import React, { Component, Fragment} from 'react';
+import {
+	BrowserRouter as Router,
+	Route,
+	Switch,
+	Link
+} from 'react-router-dom';
 import Contents from './components/content';
 import './App.css';
-import { Provider } from 'react-redux';
-import store from './store';
+
+import Header from './layouts/header';
+import Footer from './layouts/footer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Provider store={store}><Contents /></Provider>
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Contents />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

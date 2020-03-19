@@ -128,17 +128,17 @@
 .category{
   padding: 100px;
 }
-.category>div{
+.category>a{
   width: 150px;
   float: left;
   margin-left: 20px;
 }
-.category>div img{
+.category>a img{
   width: 150px;
   height: auto;
   margin-bottom: 20px;
 }
-.category>div a{
+.category>a span{
   text-decoration: none;
   color:black;
 }
