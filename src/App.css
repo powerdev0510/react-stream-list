@@ -94,7 +94,22 @@
 .footer .followus{
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .footer .followus>div{
   align-self: center;
+}
+.footer .followus .social {
+  margin-left: 10px;
+}
+.footer .followus .social img{
+  height: 25px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.footer .followus .store img{
+  width: 135px;
+  height: 40px;
+  margin-right: 20px;
 }
