@@ -2,18 +2,13 @@ import React, { Component, Fragment} from 'react';
 import placeholder from '../assets/placeholder.png';
 
 import {
-	BrowserRouter as Router,
-	Route,
-	Switch,
 	Link
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Home extends Component {
-  constructor(props){
-    super(props);
-  }
   render() {
+    console.log('---Home Render');
     return (
       <Fragment>
         <div className="contentHeader">

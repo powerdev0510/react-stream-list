@@ -2,6 +2,7 @@ import React, { Component, Fragment} from 'react';
 
 class Series extends Component {
   render() {
+    console.log('---Series Render');
     const { data } = this.props;
     const items = data.map((item, index) => {
         if(index < 21)
