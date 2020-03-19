@@ -128,17 +128,58 @@
 .category{
   padding: 100px;
 }
+.category .categoryImg{
+  width: 150px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+  margin-bottom: 20px;
+}
 .category>a{
   width: 150px;
   float: left;
   margin-left: 20px;
+  text-decoration: none;
 }
-.category>a img{
-  width: 150px;
-  height: auto;
-  margin-bottom: 20px;
+.category .categoryImg img{
+  position: absolute;
+  z-index: 2;
+  margin-top: 25px;
+  margin-left: -55px;
+}
+.category .categoryImg .overwrite{
+  position: absolute;
+  z-index: 3;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  top: 50%;
+  margin-top: -17px;
+  left: 50%;
+  margin-left: -55px;
 }
 .category>a span{
   text-decoration: none;
   color:black;
+}
+.itemContainer{
+  overflow-y: scroll;
+  max-height: calc(100% - 370px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.itemContainer .item{
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.itemContainer .item img{
+  width: 150px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+img:hover{
+  opacity: 0.5;
+  cursor: pointer;
 }

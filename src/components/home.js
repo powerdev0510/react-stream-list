@@ -1,4 +1,6 @@
 import React, { Component, Fragment} from 'react';
+import placeholder from '../assets/placeholder.png';
+
 import {
 	BrowserRouter as Router,
 	Route,
@@ -19,11 +21,17 @@ class Home extends Component {
         </div>
         <div className="category">
           <Link to='/series'>
-            <img src="https://streamcoimg-a.akamaihd.net/000/128/61/12861-PosterArt-ec32a81986a45eac7e080112075ab466.jpg" alt="series"/>
+            <div className="categoryImg">
+              <img src={placeholder} alt="series"/>
+              <div className="overwrite">SERIES</div>
+            </div>
             <span>Popular Series</span>
           </Link>
           <Link to='/movies'>
-            <img src="https://streamcoimg-a.akamaihd.net/000/128/61/12861-PosterArt-ec32a81986a45eac7e080112075ab466.jpg" alt="movies"/>
+            <div className="categoryImg">
+              <img src={placeholder} alt="series"/>
+              <div className="overwrite">MOVIES</div>
+            </div>
             <span>Popular Movies</span>
           </Link>
         </div>

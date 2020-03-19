@@ -17,11 +17,18 @@ class Contents extends Component {
     this.props.dispatch(fetchStream());
 	}
   render() {
+    console.log('---Contents Render');
     return (
       <Switch>
-        <Route exact path='/' component={Home}></Route>
-        <Route exact path='/movies' component={Movies}></Route>
-        <Route exact path='/series' component={Series}></Route>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/movies' >
+          <Movies data = { this.props.data.filter(e => e.programType === 'movie')} />
+        </Route>
+        <Route path='/series'>
+          <Series data  = { this.props.data.filter(e => e.programType === 'series')}/>
+        </Route>
       </Switch>
     );
   }
