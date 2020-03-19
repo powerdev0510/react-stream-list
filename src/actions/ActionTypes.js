@@ -1,0 +1,1 @@
+export const FEATCH_STREAM = 'stream/FEATCH_STREAM';

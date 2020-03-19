@@ -12,7 +12,7 @@ const router = new Router();
 
 router
 	.use(bodyParser())
-	.get('/streams', api.getAllStreams)
+	.get('/stream', api.getAllStreams)
 
 app
 	.use(router.routes())

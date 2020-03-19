@@ -22,14 +22,14 @@ function Footer() {
             </div>
             <div className="followus">
                 <div className="social">
-                    <img src={facebook} />
-                    <img src={twitter} />
-                    <img src={instagram} />
+                    <img src={facebook} alt="facebook"/>
+                    <img src={twitter} alt="twitter"/>
+                    <img src={instagram} alt="instagram"/>
                 </div>
                 <div className="store">
-                    <img src={app} />
-                    <img src={play} />
-                    <img src={windows} />
+                    <img src={app} alt="app"/>
+                    <img src={play} alt="play"/>
+                    <img src={windows} alt="windows"/>
                 </div>
             </div>
         </div>
