@@ -1,4 +1,4 @@
-import { createActions} from 'redux-actions';
+import { createAction} from 'redux-actions';
 import * as types from './ActionTypes';
 
-export const fetchStreamSuccess = createActions(types.FEATCH_STREAM);
+export const fetchStreamSuccess = createAction(types.FEATCH_STREAM);

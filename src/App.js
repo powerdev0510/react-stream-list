@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
-import Header from './components/header';
-import Footer from './components/footer';
+import Header from './layouts/header';
+import Footer from './layouts/footer';
 import Contents from './components/content';
 import './App.css';
 import { Provider } from 'react-redux';

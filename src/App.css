@@ -48,10 +48,12 @@
   display: flex;
   justify-content: space-between;
 }
-.header h1{
+.header a{
   color: white;
   font-weight: bold;
   margin: 0;
+  text-decoration: none;
+  font-size: 30px;
 }
 .freeTrial{
   padding: 10px;
@@ -112,4 +114,31 @@
   width: 135px;
   height: 40px;
   margin-right: 20px;
+}
+.contentHeader{
+  height: 70px;
+  background-image: linear-gradient(#2f2e2c, #424242);
+  display: flex;
+}
+.contentHeader h2{
+  color: white;
+  align-self: center;
+  font-weight: normal;
+}
+.category{
+  padding: 100px;
+}
+.category>div{
+  width: 150px;
+  float: left;
+  margin-left: 20px;
+}
+.category>div img{
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.category>div a{
+  text-decoration: none;
+  color:black;
 }
