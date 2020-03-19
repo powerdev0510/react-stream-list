@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  position: relative;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +37,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App>div{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.header{
+  height: 100px;
+  background-image: linear-gradient(#0098fe, #0166fc);
+  display: flex;
+  justify-content: space-between;
+}
+.header h1{
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+.freeTrial{
+  padding: 10px;
+  background: #3a3c3b;
+  margin-left: 50px !important;
+}
+.header span{
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  align-self: center;
+}
+.header span:hover{
+  cursor: pointer;
+}
+.header>div{
+  align-self: center;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0px;
+  height: 200px;
+  width: calc( 100% - 200px );
+  background: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer a, p{
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer .menu {
+  color: white;
+}
+.footer .followus{
+  display: flex;
+  justify-content: space-between;
+}
+.footer .followus>div{
+  align-self: center;
 }
