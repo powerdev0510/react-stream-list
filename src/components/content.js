@@ -22,10 +22,10 @@ class Contents extends Component {
           <Home />
         </Route>
         <Route path='/movies' >
-          <Movies data = { this.props.data.filter(e => e.programType === 'movie')} />
+          <Movies data = { this.props.data.filter(e => e.programType === 'movie' && e.releaseYear >= 2010)} />
         </Route>
         <Route path='/series'>
-          <Series data  = { this.props.data.filter(e => e.programType === 'series')}/>
+          <Series data  = { this.props.data.filter(e => e.programType === 'series' && e.releaseYear >= 2010)}/>
         </Route>
       </Switch>
     );
