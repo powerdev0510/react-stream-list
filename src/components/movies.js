@@ -5,7 +5,6 @@ class Movies extends Component {
     const { data } = this.props
     console.log('---Movies Render');
     const items = data.map((item, index) => {
-        if(index < 21)
           return (
             <div className='item' key={index}>
               <img src={item.images['Poster Art'].url} alt="movie" />

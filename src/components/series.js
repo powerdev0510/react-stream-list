@@ -5,7 +5,6 @@ class Series extends Component {
     console.log('---Series Render');
     const { data } = this.props;
     const items = data.map((item, index) => {
-        if(index < 21)
           return (
             <div className='item' key={index}>
               <img src={item.images['Poster Art'].url} alt="movie" />
