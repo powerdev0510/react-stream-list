@@ -1,5 +1,5 @@
 import React, { Component, Fragment} from 'react';
-
+import Card from './card';
 class Series extends Component {
   render() {
     console.log('---Series Render');
@@ -10,6 +10,7 @@ class Series extends Component {
               <img src={item.images['Poster Art'].url} alt="movie" />
               <span>{item.title}</span>
             </div>
+            // <Card key={index} img={item.images['Poster Art'].url} alt='series' title={item.title} />
           );
       }
     );

@@ -15,6 +15,7 @@ class Contents extends Component {
     this.props.dispatch(fetchStream());
   }
   compare = (a, b) => {
+    console.log(a.title + ':' + a.programType);
     if ( a.title < b.title ){
       return -1;
     }
