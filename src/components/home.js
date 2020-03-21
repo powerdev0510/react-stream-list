@@ -19,7 +19,7 @@ class Home extends Component {
           <h3 style={{marginLeft: '100px'}}>Loading...</h3>
         }
         {isFailed === true &&
-          <h3 style={{marginLeft: '100px'}}>Failed...</h3>
+          <h3 style={{marginLeft: '100px'}}>Oops, Somethings went wrong...</h3>
         }
         {isLoading === false && isFailed === false &&
           <div className="category">
