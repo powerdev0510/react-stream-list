@@ -1,4 +1,5 @@
 import React, { Component, Fragment} from 'react';
+import Card from './card';
 
 class Movies extends Component {
   render() {
@@ -6,10 +7,7 @@ class Movies extends Component {
     console.log('---Movies Render');
     const items = data.map((item, index) => {
           return (
-            <div className='item' key={index}>
-              <img src={item.images['Poster Art'].url} alt="movie" />
-              <span>{item.title}</span>
-            </div>
+            <Card key={index} img={item.images['Poster Art'].url} alt='series' title={item.title} />
           );
       }
     );

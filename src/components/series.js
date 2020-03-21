@@ -6,11 +6,7 @@ class Series extends Component {
     const { data } = this.props;
     const items = data.map((item, index) => {
           return (
-            <div className='item' key={index}>
-              <img src={item.images['Poster Art'].url} alt="movie" />
-              <span>{item.title}</span>
-            </div>
-            // <Card key={index} img={item.images['Poster Art'].url} alt='series' title={item.title} />
+            <Card key={index} img={item.images['Poster Art'].url} alt='series' title={item.title} />
           );
       }
     );
